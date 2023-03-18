@@ -4,33 +4,33 @@ import { setupRouterGuard } from './guard';
 import { BasicLayout } from '../layouts/index';
 
 const routes: RouteRecordRaw[] = [
+  // {
+  //   path: '/',
+  //   name: 'root',
+  //   redirect: '/test1',
+  //   component: BasicLayout,
+  //   children: [
+  //     {
+  //       path: '/test1',
+  //       name: 'test1',
+  //       component: () => import('~/src/views/test/test1.vue'),
+  //     },
+  //     {
+  //       path: '/test2',
+  //       name: 'test2',
+  //       component: () => import('~/src/views/test/test2.vue'),
+  //     },
+  //     {
+  //       path: '/test3',
+  //       name: 'test3',
+  //       component: () => import('~/src/views/test/test3.vue'),
+  //     },
+  //   ],
+  // },
   {
     path: '/',
-    name: 'root',
-    redirect: '/test1',
-    component: BasicLayout,
-    children: [
-      {
-        path: '/test1',
-        name: 'test1',
-        component: () => import('~/src/views/test/test1.vue'),
-      },
-      {
-        path: '/test2',
-        name: 'test2',
-        component: () => import('~/src/views/test/test2.vue'),
-      },
-      {
-        path: '/test3',
-        name: 'test3',
-        component: () => import('~/src/views/test/test3.vue'),
-      },
-    ],
-  },
-  {
-    path: '/login',
-    name: 'Login',
-    component: () => import('@/views/login/index.vue'), // 注意这里要带上 文件后缀.vue
+    name: 'index',
+    component: () => import('@/views/index/index.vue'), // 注意这里要带上 文件后缀.vue
   },
   {
     path: '/no-permission',

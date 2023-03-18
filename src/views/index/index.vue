@@ -1,6 +1,6 @@
 <template>
   <div flex-col-center wh-full>
-    <div class="w-500px">
+    <div class="w-80vw md:w-500px">
       <n-h1 class="text-center">{{ title }}</n-h1>
       <n-form ref="formRef" :model="model">
         <n-form-item path="platform" label="平台名称">
@@ -92,4 +92,4 @@ const model = ref<ModelType>({
 });
 </script>
 
-<style lang="less" scoped></style>
+<style scoped></style>
